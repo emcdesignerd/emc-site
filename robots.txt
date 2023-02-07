@@ -1,0 +1,5 @@
+# Sitemap: https://emcadvertising.com/post-sitemap.xml
+Sitemap: https://emcadvertising.com/page-sitemap.xml
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
