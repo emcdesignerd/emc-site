@@ -15,12 +15,12 @@
 
                     <script>
                         function myFunction() {
-                        var x = document.getElementById("menu_mob");
-                        if (x.style.display === "block") {
-                        x.style.display = "none";
-                        } else {
-                        x.style.display = "block";
-                        }
+                            var x = document.getElementById("menu_mob");
+                            if (x.style.display === "block") {
+                                x.style.display = "none";
+                            } else {
+                                x.style.display = "block";
+                            }
                         }
                     </script>
 
@@ -28,7 +28,7 @@
                         <nav id="menu_mob">
                             <a href="/" id="main_logo_mob_menu"></a>
                             <a href="#" onClick="myFunction()" id="hamb_close">
-                            <div class="hamb_bar_close"></div>
+                                <div class="hamb_bar_close"></div>
                             <a>
                             <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
                         </nav>
