@@ -1,0 +1,1462 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h4 {
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h6 {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 20px 12px 20px;
+  border-bottom: 1px solid #d2d2d2;
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  margin-bottom: 25px;
+  background: #15387b;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 23px;
+}
+
+nav#menu ul#menu-emc-1 {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul#menu-emc {
+  padding-left: 0;
+}
+ul#menu-emc li {
+  list-style-type: none;
+}
+
+#header {
+  height: 75px;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  background: #ffffff;
+  border-bottom: 1px solid #dedede;
+}
+
+#main_header {
+  margin: auto;
+  text-align: center;
+  max-width: 1600px;
+}
+
+.button1 {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 250px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 25px;
+  background: #a1c4bc;
+  box-shadow: inset 0 -1px 1px rgba(55, 55, 55, 0), inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 1px black;
+  margin-left: calc(50% - 145px);
+  margin-top: 0;
+  height: 47px;
+  width: 290px;
+  padding-top: 10px;
+}
+
+.button2 {
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 222px;
+  height: 55px;
+  margin-left: calc(50% - 150px);
+  height: 58px;
+  width: 300px;
+}
+
+.button3 {
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 222px;
+  height: 55px;
+  margin-left: calc(50% - 150px);
+  height: 58px;
+  width: 300px;
+}
+
+.button1g {
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  border: 0;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -1px 1px rgba(55, 55, 55, 0), inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 1px black;
+  margin-left: calc(50% - 85px);
+  margin-top: 0;
+  height: 47px;
+  width: 170px;
+  padding-top: 10px;
+}
+
+.button3g {
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  padding: 5px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 222px;
+  height: 55px;
+  margin-left: calc(50% - 90px);
+  height: 58px;
+  width: 180px;
+}
+
+.button2 a:hover,
+.button3 a:hover,
+.button3g a:hover {
+  background: #45709a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.home p {
+  margin-bottom: 0;
+}
+
+#sidebar,
+#branding,
+#search,
+#copyright,
+#main_phone,
+.site-title,
+.author,
+.vcard,
+.meta-sep,
+.entry-date,
+.entry-summary,
+.entry-title,
+.header .post-edit-link {
+  display: none;
+}
+
+.blog_photo {
+  border: 1px solid #cecdcd;
+  border-bottom: 0;
+  margin: -15px 0 -6px 0;
+  width: 100%;
+}
+
+a {
+  color: #357b6b;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #357b6b;
+  text-decoration: underline;
+}
+
+.removeunderline a {
+  text-decoration: none;
+}
+
+.fourfour_copy a {
+  color: #357b6b;
+  text-decoration: none;
+}
+
+.fourfour_copy a:hover {
+  color: #357b6b;
+  text-decoration: underline;
+}
+
+#main_logo {
+  margin: 0 auto 10px auto;
+  margin-top: 10px;
+  display: block;
+  background-image: url("/wp-content/uploads/2020/11/EMC_logo_full.jpg");
+  width: 300px;
+  height: 35px;
+  background-size: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#main_phone {
+  display: inline-block;
+}
+
+#main_phone_mob {
+  display: block;
+  font-weight: 600;
+  color: #15387b;
+  font-size: 25px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.phonenumber_clean a {
+  text-decoration: none;
+}
+
+.icon-overlay {
+  width: 120px;
+  margin: auto;
+}
+
+.max900 {
+  max-width: 900px;
+  margin: auto;
+}
+
+#hamb {
+  z-index: 50;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  position: absolute;
+  right: 12px;
+  top: 10px;
+}
+
+.hamb_bar {
+  background: #888888;
+  height: 4px;
+  margin: 4px;
+}
+
+#menu_mob {
+  display: none;
+  z-index: 500;
+  margin-top: -10px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #666;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+#menu_mob a {
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+#main_logo_mob_menu {
+  margin: 0 auto 10px auto;
+  margin-top: 10px;
+  display: block;
+  background-image: url("/wp-content/uploads/2020/11/EMC_logo_full_rev.png");
+  width: 300px;
+  height: 35px;
+  background-size: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+#menu_mob ul li {
+  margin: 0 auto 10px auto;
+}
+
+#hamb_close {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 12px;
+  top: 10px;
+}
+
+.hamb_bar_close:after {
+  content: "";
+  height: 32px;
+  border-left: 2px solid #fff;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 16px;
+}
+
+.hamb_bar_close:before {
+  content: "";
+  height: 32px;
+  border-left: 2px solid #fff;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 16px;
+}
+
+.home .home-link a {
+  display: none;
+}
+
+.zig_video {
+  position: relative;
+}
+
+.square45 {
+  position: absolute;
+  left: -25px;
+  top: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  background-image: url("/wp-content/uploads/2020/11/square45.png");
+  background-size: 50px;
+  background-position: center;
+}
+
+.iconhome:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transition: 1s;
+}
+
+#footer {
+  font-size: 0;
+  color: #ffffff;
+  margin-top: -120px;
+  padding: 10;
+  width: 100%;
+  background-image: url("/wp-content/uploads/2020/11/columns2a.png");
+  background-size: 900px;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.footer_container {
+  padding-top: 124px;
+  margin: 15px auto 0 auto;
+  max-width: 1600px;
+}
+
+.footer_left {
+  height: 630px;
+  position: relative;
+  padding: 120px 0 0 25px;
+  background-image: url("/wp-content/uploads/2020/11/footer_irreguar.png");
+  background-position: left to;
+  background-repeat: no-repeat;
+}
+
+.footer_right {
+  display: none;
+}
+
+.footer_logo {
+  margin-bottom: 15px;
+  height: 148px;
+  width: 225px;
+  background-image: url("/wp-content/uploads/2020/11/EMC-logo-box.png");
+  background-size: 225px;
+  background-position: top;
+}
+
+.footer_company {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer_address {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer_phone {
+  display: block;
+  margin: 25px 0;
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer_phone:hover {
+  color: #a1c4bc;
+  text-decoration: none;
+}
+
+#footer_menu2 {
+  margin-bottom: 12px;
+}
+
+#footer_menu1 .nav-about,
+#footer_menu1 .nav-contact {
+  display: none;
+}
+
+#footer_menu2 .nav-video,
+#footer_menu2 .nav-graphic,
+#footer_menu2 .nav-media {
+  display: none;
+}
+
+#footer_menu1 a,
+#footer_menu2 a {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#footer_menu1 a:hover,
+#footer_menu2 a:hover {
+  color: #a1c4bc;
+  text-decoration: underline;
+}
+
+.footer_social_icon {
+  display: inline-block;
+  margin-bottom: 15px;
+  height: 45px;
+  width: 45px;
+  margin-right: 5px;
+  background-size: 45px;
+  background-position: top;
+}
+
+.footer_disclaimer,
+.footer_privacy {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.footer_privacy {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.footer_privacy:hover {
+  color: #a1c4bc;
+  text-decoration: underline;
+}
+
+.footer_lets {
+  text-align: center;
+  font-size: 28px;
+  line-height: 26px;
+  color: #15387b;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 25px 0 15px 0;
+}
+
+.gform_body {
+  font-size: 22px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#input_2_1,
+#input_2_4,
+#input_2_5,
+#input_2_7 {
+  font-size: 14px;
+  border: 1px solid #aaa7a7;
+  padding: 12px;
+  margin-top: -1px;
+  max-height: 175px;
+}
+
+#input_2_10,
+#input_2_11 {
+  font-size: 14px;
+  border: 1px solid #aaa7a7;
+  padding: 12px;
+  margin-top: -1px;
+  max-height: 175px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#field_2_10,
+#field_2_11 {
+  margin-top: 7px;
+  display: inline-block;
+  width: 50%;
+}
+
+#gform_submit_button_3 {
+  text-transform: uppercase;
+  width: 250px;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 12px;
+  border: 3px solid white;
+  border-radius: 25px;
+  background-color: #a1c4bc;
+  box-shadow: inset 0 -1px 1px rgba(55, 55, 55, 0), inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 1px black;
+  margin-top: -20px;
+  margin-left: calc(50% - 125px);
+}
+
+#gform_submit_button_2 {
+  text-transform: uppercase;
+  width: 250px;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 12px;
+  border: 3px solid white;
+  border-radius: 25px;
+  background-color: #a1c4bc;
+  box-shadow: inset 0 -1px 1px rgba(55, 55, 55, 0), inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 1px black;
+  margin-top: -20px;
+  margin-left: calc(50% - 125px);
+}
+
+#gform_submit_button_2:hover {
+  background: #45709a;
+}
+
+#input_3_8 {
+  margin-top: 0px;
+  margin-left: calc(50% - 152px);
+}
+
+.footer_logo {
+  margin-bottom: 15px;
+  height: 90px;
+  width: 145px;
+  background-image: url("/wp-content/uploads/2020/11/EMC-logo-box.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.fourfour_title {
+  margin: 50px 15px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  height: 20px;
+}
+
+.fourfour_copy {
+  margin: 0 15px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0px;
+  height: 20px;
+}
+
+.myfa {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background: #7ca4cf;
+  cursor: pointer;
+  vertical-align: top;
+  font-size: 24px;
+  border-radius: 40px;
+  text-align: center;
+  padding-top: 8px;
+  margin-right: 10px;
+}
+
+.myfa:hover {
+  color: #ffffff;
+  background: #a1c4bc;
+  cursor: pointer;
+}
+
+.footer_social_container {
+  margin-bottom: 8px;
+  margin-top: 12px;
+}
+
+#footer_menu1 .nav-about,
+#footer_menu1 .home-link,
+#footer_menu1 .nav-contact {
+  display: none;
+}
+
+#footer_menu2 {
+  margin-top: 12px;
+}
+
+.gform_body {
+  font-size: 22px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#input_3_1,
+#input_3_4,
+#input_3_5,
+#input_3_7,
+#input_3_10,
+#input_3_11 {
+  font-size: 14px;
+  border: 1px solid #aaa7a7;
+  padding: 12px;
+  margin-top: -1px;
+  max-height: 125px;
+}
+
+#field_3_10,
+#field_3_11 {
+  width: 100%;
+}
+
+#field_3_8 .gfield_label {
+  display: none;
+}
+
+#container ul {
+  list-style-type: square;
+  margin-bottom: 5px;
+  margin-left: 50px;
+}
+
+#container ul:last-child {
+  margin-bottom: 25px;
+}
+
+#hometitle h1 {
+  font-size: 8vw;
+  line-height: 9vw;
+  font-family: "Cinzel";
+  color: #fff;
+  margin: 12% auto 0 auto;
+}
+
+@media only screen and (min-width: 650px) {
+  #hometitle h1 {
+    font-size: 8vw;
+    line-height: 8vw;
+    margin-top: 7vw;
+  }
+  #header {
+    height: 75px;
+  }
+  #header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+  }
+  #main_logo {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 320px;
+    display: block;
+    background-image: url("/wp-content/uploads/2020/11/EMC_logo_full.jpg");
+    height: 50px;
+    background-size: 300px;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+  }
+  #main_phone {
+    position: absolute;
+    top: 24px;
+    right: 72px;
+    display: block;
+    font-weight: 600;
+    color: #15387b;
+    font-size: 32px;
+    letter-spacing: -1px;
+    text-decoration: none;
+  }
+  #main_phone a {
+    color: #15387b;
+    text-decoration: none;
+  }
+  #menu {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+  #menu ul li {
+    display: inline-block;
+  }
+  #menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    color: #000000;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  #menu a:hover {
+    color: #357b6b;
+    text-decoration: underline;
+  }
+  #main_phone_mob {
+    display: none;
+  }
+  #hamb {
+    top: 22px;
+  }
+  #menu_mob {
+    display: none;
+    z-index: 500;
+    margin-top: -10px;
+    position: absolute;
+    height: 350px;
+    padding-top: 25px;
+    width: 100%;
+    background: #666;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  #hamb_close {
+    top: 20px;
+  }
+  .footer_left {
+    height: 530px;
+  }
+  #footer_menu1 {
+    position: absolute;
+    width: 180px;
+    left: 300px;
+    top: 320px;
+  }
+  #footer_menu2 {
+    position: absolute;
+    width: 120px;
+    left: 525px;
+    top: 320px;
+  }
+  #footer {
+    background-image: url("/wp-content/uploads/2020/11/columns2a.png");
+    background-size: 1200px;
+    background-position: right top;
+  }
+  .footer_social_icon {
+    margin-right: 10px;
+  }
+  .footer_social_container {
+    margin-bottom: 8px;
+    margin-top: 70px;
+  }
+  .myfa {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    color: #ffffff;
+    background: #7ca4cf;
+    cursor: pointer;
+    vertical-align: top;
+    font-size: 28px;
+    border-radius: 45px;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 10px;
+  }
+  #footer_menu2 {
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 760px) {
+  #hometitle h1 {
+    font-size: 7vw;
+    line-height: 8vw;
+    font-family: "Cinzel";
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    margin-top: -12px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #hometitle h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-family: "Cinzel";
+    color: #fff;
+    width: 999px;
+    margin: auto;
+    margin-top: 0px;
+  }
+  .square45 {
+    position: absolute;
+    left: -25px;
+  }
+  #main_header {
+    height: 90px;
+  }
+  #main_logo {
+    display: inline-block;
+    width: 28%;
+    margin-top: 16px;
+    position: relative;
+  }
+  .phone_menu {
+    right: 0;
+    top: 0;
+    width: 72%;
+    display: inline-block;
+    position: relative;
+  }
+  #main_phone {
+    position: inherit;
+    top: 18px;
+    display: block;
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    text-align: right;
+  }
+  #main_logo {
+    margin-top: 10px;
+    display: inline-block;
+    background-image: url("/wp-content/uploads/2020/11/EMC_logo_full.jpg");
+    width: 24%;
+    height: 50px;
+    background-size: 265px;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+  }
+  .phone_menu {
+    vertical-align: top;
+    width: 76%;
+    height: 125px;
+    font-size: 0;
+  }
+  #main_phone {
+    margin-top: 5px;
+  }
+  #menu {
+    display: none;
+    width: 77%;
+    vertical-align: top;
+    margin-top: 36px;
+    letter-spacing: -1px;
+  }
+  #menu a {
+    font-size: 14px;
+  }
+  .footer_left {
+    width: 50%;
+    display: inline-block;
+    height: 560px;
+  }
+  .footer_right {
+    padding: 0 25px 0 50px;
+    width: 50%;
+    display: inline-block;
+  }
+  #footer_menu1 {
+    position: absolute;
+    width: 180px;
+    left: 280px;
+    top: 320px;
+  }
+  #footer_menu2 {
+    position: absolute;
+    width: 180px;
+    left: 490px;
+    top: 320px;
+  }
+  .footer_social_container {
+    margin-bottom: 8px;
+    margin-top: 90px;
+  }
+  #input_2_8 {
+    margin-top: -30px;
+    margin-left: calc(50% - 145px);
+  }
+}
+@media only screen and (min-width: 1350px) {
+  #hometitle h1 {
+    font-size: 60px;
+    line-height: 60px;
+    font-family: "Cinzel";
+    color: #fff;
+    width: 700px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: -12px;
+  }
+  .circle1 {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 38px;
+    height: 38px;
+    margin-top: 3px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px;
+    border: 0;
+    border-radius: 25px;
+    background: #a1c4bc;
+    box-shadow: inset 0 -1px 1px rgba(55, 55, 55, 0), inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 1px black;
+  }
+  .circle11 {
+    position: absolute;
+    top: 160px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 46px;
+    height: 46px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 45px;
+    margin-left: -22px;
+  }
+  .circle12 {
+    position: absolute;
+    top: 285px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 46px;
+    height: 46px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 45px;
+    margin-left: -22px;
+  }
+  .circle13 {
+    position: absolute;
+    top: 409px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 46px;
+    height: 46px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 45px;
+    margin-left: -22px;
+  }
+  .circle14 {
+    position: absolute;
+    top: 555px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 46px;
+    height: 46px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 45px;
+    margin-left: -22px;
+  }
+  .circle15 {
+    position: absolute;
+    top: 680px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 46px;
+    height: 46px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 45px;
+    margin-left: -22px;
+  }
+  .circle11 a:hover,
+  .circle12 a:hover,
+  .circle13 a:hover,
+  .circle14 a:hover,
+  .circle15 a:hover {
+    background: #45709a;
+  }
+  .home_increasing {
+    font-size: 26px;
+  }
+  #header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+  }
+  #hamb {
+    display: none;
+  }
+  #main_logo {
+    margin: 0;
+    top: 1px;
+    width: 25%;
+    height: 75px;
+    background-size: 275px;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+  }
+  .phone_menu {
+    vertical-align: top;
+    width: 75%;
+    height: 75px;
+    font-size: 0;
+  }
+  #main_phone {
+    position: absolute;
+    left: 0;
+    top: 21px;
+    display: inline-block;
+    width: 280px;
+    text-align: right;
+    font-size: 34px;
+    letter-spacing: -0.5px;
+  }
+  #menu {
+    top: -67px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    letter-spacing: -1px;
+    padding-right: 10px;
+  }
+  #menu a {
+    font-size: 14px;
+  }
+  .page-id-12 #menu .nav-about a {
+    color: #477167;
+  }
+  .page-id-14 #menu .nav-contact a {
+    color: #477167;
+  }
+  .page-id-15 #menu .nav-video a {
+    color: #477167;
+  }
+  .page-id-16 #menu .nav-media a {
+    color: #477167;
+  }
+  .page-id-23 #menu .nav-graphic a {
+    color: #477167;
+  }
+  #footer {
+    font-size: 0;
+    color: #ffffff;
+    margin-top: -225px;
+    padding: 140px 15px 0px 15px;
+    width: 100%;
+    background-image: url("/wp-content/uploads/2020/11/columns2a.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-bottom: 35px;
+  }
+  .footer_container {
+    padding-top: 24px;
+    margin: 175px auto 0 auto;
+    max-width: 1550px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-size: 100%;
+  }
+  .footer_left {
+    display: inline-block;
+    position: relative;
+    padding: 150px 0 50px 50px;
+    width: 50%;
+    background-image: url("/wp-content/uploads/2020/11/footer_irreguar.png");
+    background-size: 125%;
+    background-position: top;
+    height: 630px;
+  }
+  .footer_right {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    padding: 0 50px 0 75px;
+    width: 50%;
+  }
+  .footer_logo {
+    margin-bottom: 15px;
+    height: 148px;
+    width: 225px;
+    background-image: url("/wp-content/uploads/2020/11/EMC-logo-box.png");
+    background-size: 225px;
+    background-position: top;
+  }
+  .footer_company {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .footer_address {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .footer_phone {
+    margin: 25px 0;
+    font-size: 32px;
+    font-weight: 400;
+  }
+  #footer_menu1 {
+    z-index: 222;
+    position: absolute;
+    left: 300px;
+    top: 315px;
+  }
+  #footer_menu2 {
+    z-index: 222;
+    position: absolute;
+    left: 520px;
+    top: 315px;
+  }
+  #footer_menu1 .nav-about,
+  #footer_menu1 .home-link,
+  #footer_menu1 .nav-contact {
+    display: none;
+  }
+  #footer_menu2 .nav-video,
+  #footer_menu2 .nav-graphic,
+  #footer_menu2 .nav-media {
+    display: none;
+  }
+  #footer_menu1 a,
+  #footer_menu2 a {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #footer_menu1 a:hover,
+  #footer_menu2 a:hover {
+    color: #a1c4bc;
+    text-decoration: underline;
+  }
+  .footer_social_icon {
+    display: inline-block;
+    margin-bottom: 15px;
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    background-size: 50px;
+    background-position: top;
+  }
+  .footer_disclaimer,
+  .footer_privacy {
+    display: inline-block;
+    font-size: 14px;
+  }
+  .footer_privacy {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  .footer_privacy a:hover {
+    color: #a1c4bc;
+    text-decoration: underline;
+  }
+  .footer_lets {
+    text-align: center;
+    font-size: 28px;
+    line-height: 26px;
+    color: #15387b;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    padding: 25px 0 15px 0;
+  }
+  .gform_body {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #input_2_1,
+  #input_2_4,
+  #input_2_5,
+  #input_2_7 {
+    font-size: 14px;
+    border: 1px solid #aaa7a7;
+    padding: 12px;
+    margin-top: -1px;
+    max-height: 125px;
+  }
+  #gform_submit_button_2 {
+    text-transform: uppercase;
+    width: 250px;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 12px;
+    border: 3px solid white;
+    border-radius: 25px;
+    background-color: #a1c4bc;
+    box-shadow: inset 0 -1px 1px rgba(55, 55, 55, 0), inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 1px black;
+    margin-top: -20px;
+    margin-left: calc(50% - 125px);
+  }
+  #gform_submit_button_2:hover {
+    background: #45709a;
+  }
+  .footer_social_container {
+    margin: 10px 0 70px 0;
+  }
+  #input_2_8 {
+    margin-top: -30px;
+    margin-left: calc(50% - 145px);
+  }
+  .home_lastintro {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 1515px) {
+  .home_increasing {
+    font-size: 34px;
+  }
+  .circle1 {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 38px;
+    height: 38px;
+    margin-top: 3px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px;
+    border: 0;
+    border-radius: 25px;
+    background: #a1c4bc;
+    box-shadow: inset 0 -1px 1px rgba(55, 55, 55, 0), inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 1px black;
+  }
+  .circle11 {
+    top: 160px;
+  }
+  .circle12 {
+    top: 266px;
+  }
+  .circle13 {
+    top: 390px;
+  }
+  .circle14 {
+    top: 537px;
+  }
+  .circle15 {
+    top: 662px;
+  }
+}
+@media only screen and (min-width: 1555px) {
+  .circle11 {
+    top: 159px;
+  }
+  .circle12 {
+    top: 264px;
+  }
+  .circle13 {
+    top: 373px;
+  }
+  .circle14 {
+    top: 514px;
+  }
+  .circle15 {
+    top: 643px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #header {
+    height: 110px;
+  }
+  #main_logo {
+    top: 17px;
+    width: 440px;
+    background-size: 400px;
+  }
+  .phone_menu {
+    width: 1150px;
+  }
+  #main_phone {
+    width: 380px;
+    font-size: 42px;
+    letter-spacing: -1px;
+    top: 40px;
+  }
+  #menu {
+    top: -50px;
+    width: 760px;
+  }
+  #menu a {
+    font-size: 15px;
+    letter-spacing: -0.3px;
+  }
+  .phone_menu {
+    width: 71%;
+  }
+}
+@media only screen and (min-width: 1650px) {
+  .circle11 {
+    top: 159px;
+  }
+  .circle12 {
+    top: 262px;
+  }
+  .circle13 {
+    top: 370px;
+  }
+  .circle14 {
+    top: 496px;
+  }
+  .circle15 {
+    top: 622px;
+  }
+  .home_lastintro {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,107 @@
+.button1 {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 250px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 25px;
+    background: #a1c4bc;
+    box-shadow: inset 0 -1px 1px rgba(55, 55, 55, 0),
+        /*bottom internal shadow*/ inset 0 1px 1px rgba(255, 255, 255, 0),
+        /*top internal highlight*/ 0 0 1px black;
+    margin-left: calc(50% - 145px);
+    margin-top: 0;
+    height: 47px;
+    width: 290px;
+    padding-top: 10px;
+}
+
+.button2 {
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 222px;
+    height: 55px;
+    margin-left: calc(50% - 150px);
+    height: 58px;
+    width: 300px;
+}
+
+.button3 {
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 222px;
+    height: 55px;
+    margin-left: calc(50% - 150px);
+    height: 58px;
+    width: 300px;
+}
+
+.button1g {
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    border: 0;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -1px 1px rgba(55, 55, 55, 0),
+        /*bottom internal shadow*/ inset 0 1px 1px rgba(255, 255, 255, 0),
+        /*top internal highlight*/ 0 0 1px black;
+    margin-left: calc(50% - 85px);
+    margin-top: 0;
+    height: 47px;
+    width: 170px;
+    padding-top: 10px;
+}
+
+.button3g {
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 222px;
+    height: 55px;
+    margin-left: calc(50% - 90px);
+    height: 58px;
+    width: 180px;
+}
+
+.button2 a:hover,
+.button3 a:hover,
+.button3g a:hover {
+    background: #45709a;
+    color: #fff;
+    text-decoration: none;
+}

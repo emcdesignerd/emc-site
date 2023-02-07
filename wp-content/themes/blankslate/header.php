@@ -1,51 +1,28 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> <?php blankslate_schema_type(); ?>>
 <head>
-	<meta name="facebook-domain-verification" content="dw5wrjx0uvh4pdv9gv0a7c571rg5j6" />
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 <div id="wrapper" class="hfeed">
-<header id="header">
-
-
-
-<script>
-function myFunction() {
-var x = document.getElementById("menu_mob");
-if (x.style.display === "block") {
-x.style.display = "none";
-} else {
-x.style.display = "block";
-}
-}
-</script>
-	
-	
-
-	
-
-<div id="main_header">
-
-	<nav id="menu_mob">
-	<a href="/" id="main_logo_mob_menu"></a>
-		<a href="#" onClick="myFunction()" id="hamb_close"><div class="hamb_bar_close"></div><a>
-	<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-	</nav>
-
-	<a href="/" id="main_logo"></a>
-	<div class="phone_menu">
-		<a href="tel:1-800-555-5485" id="main_phone_mob">1-800-555-5485</a>
-		<a href="tel:1-800-555-5485" id="main_phone">1-800-555-5485</a>
-		<a href="#" onClick="myFunction()" id="hamb"><div class="hamb_bar"></div><div class="hamb_bar"></div><div class="hamb_bar"></div><a>
-		<nav id="menu">
-		<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-	</nav>
-	</div>
-
+<header id="header" role="banner">
+<div id="branding">
+<div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+<?php
+if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; }
+echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" rel="home" itemprop="url"><span itemprop="name">' . esc_html( get_bloginfo( 'name' ) ) . '</span></a>';
+if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; }
+?>
 </div>
+<div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
+</div>
+<nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
+<div id="search"><?php get_search_form(); ?></div>
+</nav>
 </header>
 <div id="container">
+<main id="content" role="main">
