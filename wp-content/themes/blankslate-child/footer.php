@@ -1,4 +1,4 @@
-</div>
+</div><!-- end #container -->
 <footer id="footer">
 
     <div class="footer_container">
@@ -18,8 +18,6 @@
                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
             </nav>
 
-        
-            
             <div class="footer_social_container">
                 <a href="https://www.facebook.com/EMCAdvertising" target="_blank" title="Facebook"><i class="fab fa-facebook-f myfa"></i></a>
                 <a href="https://www.youtube.com//EMCAdvertising" target="_blank" title="YouTube"><i class="fab fa-youtube myfa"></i></a>
@@ -29,7 +27,7 @@
                 <a href="https://goo.gl/maps/rYv3nGCe6o7JTdF78" target="_blank" title="Find us on a map"><i class="fas fa-map-marker-alt myfa"></i></a>
             </div>
 
-            <div class="footer_disclaimer">©2022 EMC Advertising. All Rights Reserved.</div>
+            <div class="footer_disclaimer">©<?php echo date("Y"); ?> <?php echo get_bloginfo( 'name' ); ?>. All Rights Reserved.</div>
             <a href="/privacy/" class="footer_privacy">PRIVACY POLICY</a>.
 
         </div>
@@ -43,7 +41,7 @@
 
 
 </footer>
-</div>
+</div><!-- end #wrapper -->
 <?php wp_footer(); ?>
 </body>
 </html>

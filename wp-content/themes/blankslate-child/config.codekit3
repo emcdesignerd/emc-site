@@ -4,7 +4,7 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "B229F841-26FE-460C-BF3D-CECB11194AD1"
+      "uuidString" : "14702464-2675-4631-8F09-B509D7D24E5A"
     }
   ],
   "creatorBuild" : "34448",
@@ -37,7 +37,7 @@
       "oAP" : "\/assets\/dist\/css\/main.css.map",
       "oF" : 0
     },
-    "\/assets\/src\/scss\/abstracts\/_functions.scss" : {
+    "\/assets\/src\/scss\/abstracts\/_abstracts.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -46,13 +46,13 @@
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
-      "oAP" : "\/assets\/src\/dist\/css\/_functions.css",
+      "oAP" : "\/assets\/src\/dist\/css\/_abstracts.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/src\/scss\/abstracts\/_mixins.scss" : {
+    "\/assets\/src\/scss\/abstracts\/functions\/_functions.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -61,13 +61,13 @@
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
-      "oAP" : "\/assets\/src\/dist\/css\/_mixins.css",
+      "oAP" : "\/assets\/src\/scss\/dist\/css\/_functions.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/src\/scss\/abstracts\/_placeholders.scss" : {
+    "\/assets\/src\/scss\/abstracts\/mixins\/_mixins.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -76,13 +76,13 @@
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
-      "oAP" : "\/assets\/src\/dist\/css\/_placeholders.css",
+      "oAP" : "\/assets\/src\/scss\/dist\/css\/_mixins.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/src\/scss\/abstracts\/_variables.scss" : {
+    "\/assets\/src\/scss\/abstracts\/variables\/_colors.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -91,7 +91,52 @@
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
-      "oAP" : "\/assets\/src\/dist\/css\/_variables.css",
+      "oAP" : "\/assets\/src\/scss\/dist\/css\/_colors.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/src\/scss\/abstracts\/variables\/_columns.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/src\/scss\/dist\/css\/_columns.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/src\/scss\/abstracts\/variables\/_structure.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/src\/scss\/dist\/css\/_structure.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/src\/scss\/abstracts\/variables\/_typography.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/src\/scss\/dist\/css\/_typography.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -361,10 +406,10 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 697157630.70377004,
+    "creationDate" : 697565798.63748705,
     "displayValue" : "blankslate-child",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-cafe",
+    "iconImageName" : "brackets-brick",
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
@@ -1630,7 +1675,7 @@
       }
     },
     "esLintSourceType" : 0,
-    "externalServerAddress" : "http:\/\/emc.local\/",
+    "externalServerAddress" : "https:\/\/emc2020.local\/",
     "gitIgnoreBuildFolder" : 1,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",

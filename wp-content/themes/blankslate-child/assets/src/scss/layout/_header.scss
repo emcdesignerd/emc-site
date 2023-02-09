@@ -13,3 +13,114 @@
     text-align: center;
     max-width: 1600px;
 }
+
+#main_logo {
+    margin: 0 auto 10px auto;
+    margin-top: 10px;
+    display: block;
+    background-image: url("/wp-content/uploads/2020/11/EMC_logo_full.jpg");
+    width: 300px;
+    height: 35px;
+    background-size: 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hamb {
+    z-index: 50;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+  }
+  
+  .hamb_bar {
+    background: #888888;
+    height: 4px;
+    margin: 4px;
+  }
+  
+  #menu_mob {
+    display: none;
+    z-index: 500;
+    margin-top: -10px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #666;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 28px;
+    a{
+      text-decoration: none;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 28px;
+      font-weight: 300;
+    }
+    ul li {
+      margin: 0 auto 10px auto;
+    }
+    
+  }
+  
+  #main_logo_mob_menu {
+    margin: 0 auto 10px auto;
+    margin-top: 10px;
+    display: block;
+    background-image: url("/wp-content/uploads/2020/11/EMC_logo_full_rev.png");
+    width: 300px;
+    height: 35px;
+    background-size: 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+  }
+  
+  
+  #hamb_close {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+  }
+  
+  .hamb_bar_close:after {
+    content: "";
+    height: 32px;
+    border-left: 2px solid #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 16px;
+  }
+  
+  .hamb_bar_close:before {
+    content: "";
+    height: 32px;
+    border-left: 2px solid #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 16px;
+  }
+  
+  #main_phone_mob {
+    display: block;
+    font-weight: 600;
+    color: #15387b;
+    font-size: 25px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    width: 200px;
+  }
+  

@@ -1,12 +1,7 @@
 // Pulled from: https://sass-guidelin.es/#architecture
 
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
-
-// @import 'vendors/bootstrap';
-// @import 'vendors/jquery-ui';
+// Import variables and mixins.
+@import "abstracts/abstracts";
 
 @import 'base/reset';
 @import 'base/typography';
@@ -14,7 +9,7 @@
 @import 'layout/navigation';
 // @import 'layout/grid';
 @import 'layout/header';
-// @import 'layout/footer';
+@import 'layout/footer';
 // @import 'layout/sidebar';
 // @import 'layout/forms';
 
@@ -25,7 +20,6 @@
 
 @import 'themes/theme';
 // @import 'themes/admin';
-
 
 // Copied over from style.css
 #sidebar,
@@ -54,11 +48,10 @@
 a {
   color: #357b6b;
   text-decoration: underline;
-}
-
-a:hover {
-  color: #357b6b;
-  text-decoration: underline;
+  &:hover{
+    color: #357b6b;
+    text-decoration: underline;
+  }
 }
 
 .removeunderline a {
@@ -75,34 +68,8 @@ a:hover {
   text-decoration: underline;
 }
 
-#main_logo {
-  margin: 0 auto 10px auto;
-  margin-top: 10px;
-  display: block;
-  background-image: url("/wp-content/uploads/2020/11/EMC_logo_full.jpg");
-  width: 300px;
-  height: 35px;
-  background-size: 260px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 #main_phone {
   display: inline-block;
-}
-
-#main_phone_mob {
-  display: block;
-  font-weight: 600;
-  color: #15387b;
-  font-size: 25px;
-  letter-spacing: -0.2px;
-  text-align: center;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 10px;
-  text-decoration: none;
-  width: 200px;
 }
 
 .phonenumber_clean a {
@@ -117,94 +84,6 @@ a:hover {
 .max900 {
   max-width: 900px;
   margin: auto;
-}
-
-#hamb {
-  z-index: 50;
-  display: block;
-  width: 32px;
-  height: 32px;
-  background: #fff;
-  position: absolute;
-  right: 12px;
-  top: 10px;
-}
-
-.hamb_bar {
-  background: #888888;
-  height: 4px;
-  margin: 4px;
-}
-
-#menu_mob {
-  display: none;
-  z-index: 500;
-  margin-top: -10px;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #666;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 28px;
-}
-
-#menu_mob a {
-  text-decoration: none;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 28px;
-  font-weight: 300;
-}
-
-#main_logo_mob_menu {
-  margin: 0 auto 10px auto;
-  margin-top: 10px;
-  display: block;
-  background-image: url("/wp-content/uploads/2020/11/EMC_logo_full_rev.png");
-  width: 300px;
-  height: 35px;
-  background-size: 260px;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 25px;
-}
-
-#menu_mob ul li {
-  margin: 0 auto 10px auto;
-}
-
-#hamb_close {
-  display: block;
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  right: 12px;
-  top: 10px;
-}
-
-.hamb_bar_close:after {
-  content: "";
-  height: 32px;
-  border-left: 2px solid #fff;
-  position: absolute;
-  transform: rotate(45deg);
-  left: 16px;
-}
-
-.hamb_bar_close:before {
-  content: "";
-  height: 32px;
-  border-left: 2px solid #fff;
-  position: absolute;
-  transform: rotate(-45deg);
-  left: 16px;
-}
-
-.home .home-link a {
-  display: none;
 }
 
 .zig_video {
@@ -227,141 +106,10 @@ a:hover {
   transition: 1s;
 }
 
-#footer {
-  font-size: 0;
-  color: #ffffff;
-  margin-top: -120px;
-  padding: 10;
-  width: 100%;
-  background-image: url("/wp-content/uploads/2020/11/columns2a.png");
-  background-size: 900px;
-  background-position: left top;
-  background-repeat: no-repeat;
-}
-
-.footer_container {
-  padding-top: 124px;
-  margin: 15px auto 0 auto;
-  max-width: 1600px;
-}
-
-.footer_left {
-  height: 630px;
-  position: relative;
-  padding: 120px 0 0 25px;
-  background-image: url("/wp-content/uploads/2020/11/footer_irreguar.png");
-  background-position: left to;
-  background-repeat: no-repeat;
-}
-
-.footer_right {
-  display: none;
-}
-
-.footer_logo {
-  margin-bottom: 15px;
-  height: 148px;
-  width: 225px;
-  background-image: url("/wp-content/uploads/2020/11/EMC-logo-box.png");
-  background-size: 225px;
-  background-position: top;
-}
-
-.footer_company {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.footer_address {
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.footer_phone {
-  display: block;
-  margin: 25px 0;
-  font-size: 32px;
-  font-weight: 400;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.footer_phone:hover {
-  color: #a1c4bc;
-  text-decoration: none;
-}
-
-#footer_menu2 {
-  margin-bottom: 12px;
-}
-
-#footer_menu1 .nav-about,
-#footer_menu1 .nav-contact {
-  display: none;
-}
-
-#footer_menu2 .nav-video,
-#footer_menu2 .nav-graphic,
-#footer_menu2 .nav-media {
-  display: none;
-}
-
-#footer_menu1 a,
-#footer_menu2 a {
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-#footer_menu1 a:hover,
-#footer_menu2 a:hover {
-  color: #a1c4bc;
-  text-decoration: underline;
-}
-
-.footer_social_icon {
-  display: inline-block;
-  margin-bottom: 15px;
-  height: 45px;
-  width: 45px;
-  margin-right: 5px;
-  background-size: 45px;
-  background-position: top;
-}
-
-.footer_disclaimer,
-.footer_privacy {
-  display: inline-block;
-  font-size: 14px;
-}
-
-.footer_privacy {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 5px;
-}
-
-.footer_privacy:hover {
-  color: #a1c4bc;
-  text-decoration: underline;
-}
-
-.footer_lets {
-  text-align: center;
-  font-size: 28px;
-  line-height: 26px;
-  color: #15387b;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 25px 0 15px 0;
-}
-
 .gform_body {
   font-size: 22px;
   font-weight: 300;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font__main;
   font-size: 16px;
   line-height: 24px;
 }
@@ -400,7 +148,7 @@ a:hover {
   width: 250px;
   font-weight: 300;
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font__main;
   color: #ffffff;
   display: inline-block;
   text-transform: uppercase;
@@ -420,7 +168,7 @@ a:hover {
   width: 250px;
   font-weight: 300;
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font__main;
   color: #ffffff;
   display: inline-block;
   text-transform: uppercase;
@@ -491,25 +239,10 @@ a:hover {
   cursor: pointer;
 }
 
-.footer_social_container {
-  margin-bottom: 8px;
-  margin-top: 12px;
-}
-
-#footer_menu1 .nav-about,
-#footer_menu1 .home-link,
-#footer_menu1 .nav-contact {
-  display: none;
-}
-
-#footer_menu2 {
-  margin-top: 12px;
-}
-
 .gform_body {
   font-size: 22px;
   font-weight: 300;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font__main;
   font-size: 16px;
   line-height: 24px;
 }
@@ -548,9 +281,9 @@ a:hover {
 
 #hometitle h1 {
   font-size: 8vw;
+  font-family: $font__heading;
   line-height: 9vw;
-  font-family: "Cinzel";
-  color: #fff;
+  color: #ffffff;
   margin: 12% auto 0 auto;
 }
 
@@ -563,9 +296,6 @@ a:hover {
 
   #header {
     height: 75px;
-  }
-
-  #header {
     position: sticky;
     position: -webkit-sticky;
     top: 0; /* required */
@@ -711,8 +441,6 @@ a:hover {
   #hometitle h1 {
     font-size: 7vw;
     line-height: 8vw;
-    font-family: "Cinzel";
-    color: #fff;
     width: 90%;
     margin: auto;
     margin-top: -12px;
@@ -723,8 +451,6 @@ a:hover {
   #hometitle h1 {
     font-size: 70px;
     line-height: 70px;
-    font-family: "Cinzel";
-    color: #fff;
     width: 999px;
     margin: auto;
     margin-top: 0px;
@@ -838,8 +564,6 @@ a:hover {
   #hometitle h1 {
     font-size: 60px;
     line-height: 60px;
-    font-family: "Cinzel";
-    color: #fff;
     width: 700px;
     margin: auto;
     margin-top: 60px;
@@ -854,7 +578,7 @@ a:hover {
     height: 38px;
     margin-top: 3px;
     font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font__main;
     color: #ffffff;
     display: inline-block;
     text-transform: uppercase;
@@ -876,7 +600,7 @@ a:hover {
     width: 46px;
     height: 46px;
     font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font__main;
     color: #ffffff;
     display: inline-block;
     text-transform: uppercase;
@@ -895,7 +619,7 @@ a:hover {
     width: 46px;
     height: 46px;
     font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font__main;
     color: #ffffff;
     display: inline-block;
     text-transform: uppercase;
@@ -914,7 +638,7 @@ a:hover {
     width: 46px;
     height: 46px;
     font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font__main;
     color: #ffffff;
     display: inline-block;
     text-transform: uppercase;
@@ -933,7 +657,7 @@ a:hover {
     width: 46px;
     height: 46px;
     font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font__main;
     color: #ffffff;
     display: inline-block;
     text-transform: uppercase;
@@ -952,7 +676,7 @@ a:hover {
     width: 46px;
     height: 46px;
     font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font__main;
     color: #ffffff;
     display: inline-block;
     text-transform: uppercase;
@@ -1082,10 +806,8 @@ a:hover {
 
   .footer_right {
     vertical-align: top;
-    display: inline-block;
     position: relative;
     padding: 0 50px 0 75px;
-    width: 50%;
   }
 
   .footer_logo {
@@ -1164,18 +886,6 @@ a:hover {
     background-position: top;
   }
 
-  .footer_disclaimer,
-  .footer_privacy {
-    display: inline-block;
-    font-size: 14px;
-  }
-
-  .footer_privacy {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 5px;
-  }
-
   .footer_privacy a:hover {
     color: #a1c4bc;
     text-decoration: underline;
@@ -1194,7 +904,7 @@ a:hover {
   .gform_body {
     font-size: 22px;
     font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font__main;
     font-size: 16px;
     line-height: 24px;
   }
@@ -1208,26 +918,6 @@ a:hover {
     padding: 12px;
     margin-top: -1px;
     max-height: 125px;
-  }
-
-  #gform_submit_button_2 {
-    text-transform: uppercase;
-    width: 250px;
-    font-weight: 300;
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    color: #ffffff;
-    display: inline-block;
-    text-transform: uppercase;
-    padding: 12px;
-    border: 3px solid white;
-    border-radius: 25px;
-    background-color: #a1c4bc;
-    box-shadow: inset 0 -1px 1px rgba(55, 55, 55, 0),
-      /*bottom internal shadow*/ inset 0 1px 1px rgba(255, 255, 255, 0),
-      /*top internal highlight*/ 0 0 1px black;
-    margin-top: -20px;
-    margin-left: calc(50% - 125px);
   }
 
   #gform_submit_button_2:hover {
@@ -1261,7 +951,7 @@ a:hover {
     height: 38px;
     margin-top: 3px;
     font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font__main;
     color: #ffffff;
     display: inline-block;
     text-transform: uppercase;
