@@ -361,6 +361,22 @@
       "oAP" : "\/header.php",
       "oF" : 0
     },
+    "\/inc\/public\/google-tag-manager-body.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/public\/google-tag-manager-body.php",
+      "oF" : 0
+    },
+    "\/inc\/public\/google-tag-manager-head.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/public\/google-tag-manager-head.php",
+      "oF" : 0
+    },
     "\/screenshot.jpg" : {
       "ft" : 16384,
       "iS" : 128793,
@@ -407,8 +423,8 @@
   },
   "projectAttributes" : {
     "creationDate" : 697565798.63748705,
-    "displayValue" : "blankslate-child",
-    "displayValueWasSetByUser" : 0,
+    "displayValue" : "EMC - Blankslate-child",
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-brick",
     "iconImageWasSetByUser" : 0
   },

@@ -1,6 +1,5 @@
 <?php
 
-
     define('EMC_CACHE_BUSTER', '20230203');
 
     /**
@@ -10,9 +9,6 @@
     */
     
     function blankslate_theme_enqueue_styles() {
-        $theme                 = wp_get_theme();
-        $cache_busting_version = $theme->get( 'Version' ) . EMC_CACHE_BUSTER;
-
         wp_enqueue_style( 'emc-main', get_stylesheet_directory_uri() . '/style.css' );
         wp_enqueue_style( 'emc-child', get_stylesheet_directory_uri() . '/assets/dist/css/main.css' );
 

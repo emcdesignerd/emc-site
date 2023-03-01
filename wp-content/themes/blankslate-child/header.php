@@ -2,6 +2,8 @@
     <html <?php language_attributes(); ?>>
 
         <head>
+            <?php include (get_stylesheet_directory() . '/inc/public/google-tag-manager-head.php'); ?>
+
             <meta name="facebook-domain-verification" content="dw5wrjx0uvh4pdv9gv0a7c571rg5j6" />
             <meta charset="<?php bloginfo( 'charset' ); ?>" />
             <meta name="viewport" content="width=device-width" />
@@ -10,6 +12,9 @@
         </head>
 
         <body <?php body_class(); ?>>
+
+            <?php include (get_stylesheet_directory() . '/inc/public/google-tag-manager-body.php'); ?>
+
             <div id="wrapper" class="hfeed">
                 <header id="header">
 
